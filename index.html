@@ -69,27 +69,46 @@ footer{background:#080909;border-top:1px solid var(--line);padding:26px 0 80px;c
   margin: 7px 0 0;
 }
 
-  /* Compact car fleet layout */
+  /* Compact square-style car cards */
 .cars {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .car {
   min-width: 0;
 }
 
+.carImg {
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
 .carBody {
-  padding: 16px;
+  padding: 12px;
+}
+
+.car h3 {
+  font-size: 16px;
 }
 
 .specs {
-  gap: 7px;
+  gap: 5px;
+  margin: 10px 0;
 }
 
 .spec {
-  font-size: 12px;
+  font-size: 10px;
+  padding: 5px 6px;
+}
+
+.carBottom {
+  padding-top: 10px;
+}
+
+.price {
+  font-size: 19px;
 }
 
 @media (max-width: 768px) {
@@ -99,11 +118,21 @@ footer{background:#080909;border-top:1px solid var(--line);padding:26px 0 80px;c
   }
 
   .carBody {
-    padding: 10px;
+    padding: 9px;
+  }
+
+  .car h3 {
+    font-size: 14px;
   }
 
   .spec {
-    font-size: 10px;
+    font-size: 9px;
+    padding: 4px 5px;
+  }
+
+  .carBottom .btn {
+    padding: 8px 9px;
+    font-size: 9px;
   }
 }
 </style></head><body>
